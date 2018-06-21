@@ -11,6 +11,10 @@ button{
 	padding: 7px;
 }
 
+textarea{
+	resize: none;
+}
+
 .titulo{
 	font-family: 'Montserrat', sans-serif;
 	font-size:  70px;
