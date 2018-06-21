@@ -30,7 +30,7 @@
         <div class="contenedor">
             <h1 class="titulo">Guitarras inviesibles </h1><!-- titulo -->
             <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
-            <button>Conoce mas</button><!-- boton -->
+            <button class="button">Conoce mas</button><!-- boton -->
         </div>
     </section>
     <section id="guitarras" class="guitarras contenedor"> <!-- GUITARRAS -->
@@ -67,42 +67,49 @@
             </div>
             <form class="formulario">
                 
-                <label for="nombre">Nombre</label>
-                <input type="text" required id="nombre" name="nombre">
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" name="email">
+
+                    <div class="sexo">
+                        <label for="mujer">
+                            <input checked type="radio" id="mujer" value="mujer" name="sexo"> Mujer
+                        </label>
+                        <label for="hombre">
+                            <input type="radio" id="hombre" value="hombre" name="sexo"> Hombre
+                        </label>
+                    </div>
+
+                    <div class="intereses">
+                        <label for="cotizacion">
+                            <input type="checkbox" checked value="cotizacion" name="intereses" id="cotizacion"> Cotización
+                        </label>
+                        <label for="reclamos">
+                            <input type="checkbox" value="reclamos" name="intereses" id="reclamos"> Reclamos
+                        </label>
+                        <label for="comentarios">
+                            <input type="checkbox" value="comentarios" name="intereses" id="comentarios"> Comentarios
+                        </label>
+                        <label for="otros">
+                            <input type="checkbox" value="otros" name="intereses" id="otros"> Otros
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <div class="asunto">
+                        <label for="asunto">Asunto</label>
+                        <textarea name="asunto" id="asunto" cols="30" rows="7"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="button">
+                </div>
+
                 
-                <label for="email">Email</label>
-                <input type="email" required id="email" name="email">
-
-                <div class="sexo">
-                    <label for="mujer">
-                        <input type="radio" id="mujer" value="mujer" name="sexo"> Mujer
-                    </label>
-                    <label for="hombre">
-                        <input type="radio" id="hombre" value="hombre" name="sexo"> Hombre
-                    </label>
-                </div>
-
-                <div class="intereses">
-                    <label for="cotizacion">
-                        <input type="checkbox" value="cotizacion" name="intereses" id="cotizacion"> Cotización
-                    </label>
-                    <label for="reclamos">
-                        <input type="checkbox" value="reclamos" name="intereses" id="reclamos"> Reclamos
-                    </label>
-                    <label for="comentarios">
-                        <input type="checkbox" value="comentarios" name="intereses" id="comentarios"> Comentarios
-                    </label>
-                    <label for="otros">
-                        <input type="checkbox" value="otros" name="intereses" id="otros"> Otros
-                    </label>
-                </div>
-
-                <div class="observaciones">
-                    <label for="observaciones">Observaciones</label>
-                    <textarea name="observaciones" id="observaciones" cols="30" rows="7"></textarea>
-                </div>
-
-                <input type="submit" value="Enviar">
+                <!-- http://flexboxfroggy.com/#es -->
             </form>
         </div>
     </footer>
