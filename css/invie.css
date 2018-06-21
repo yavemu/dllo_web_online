@@ -25,6 +25,10 @@ body{
 	font-size: 50px;
 }
 
+.guitarra ol{
+	padding: 0;
+}
+
 .guitarras{
 	color: #1F313C;
 }
@@ -61,4 +65,27 @@ body{
 .contenedor{
 	width: 800px;
 	margin: auto;
+}
+
+.contenedor-guitarra-b{
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-c{
+	margin-left: 370px;
+}
+
+.guitarra{
+	margin: 10px;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px solid #1F313C;
+}
+
+.derecha{
+	float: right;
+}
+
+.izquierda{
+	float: left;
 }
