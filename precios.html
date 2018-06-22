@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Precios de tus mejores guitarras!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/invie.css">
+</head>
+<body>
+    <header id="header" class="header contenedor"> <!-- CABECERA -->
+        <figure class="logotipo"><!-- logotipo -->
+            <img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
+        </figure>
+        <nav class="menu"> <!-- menu -->
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html#guitarras">Guitarras</a>
+                </li>
+                <li>
+                    <a href="precios.html">Precios</a>
+                </li>
+            </ul>
+        </nav> 
+    </header>
+    
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="contacto">
+                <img src="images/invie-white.png" alt="logotipo blanco">
+                <a href="tel:500123456"><strong>Télefono:</strong><span>500123456</span></a>
+                <a href="mailito:contacto@pruebas.com"><strong>Email:</strong><span>contacto@pruebas.com</span></a>
+            </div>
+            <form class="formulario">
+                
+                <div class="col1">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" required id="nombre" name="nombre">
+                    
+                    <label for="email">Email</label>
+                    <input type="email" required id="email" name="email">
+
+                    <div class="sexo">
+                        <label for="mujer">
+                            <input checked type="radio" id="mujer" value="mujer" name="sexo"> Mujer
+                        </label>
+                        <label for="hombre">
+                            <input type="radio" id="hombre" value="hombre" name="sexo"> Hombre
+                        </label>
+                    </div>
+
+                    <div class="intereses">
+                        <label for="cotizacion">
+                            <input type="checkbox" checked value="cotizacion" name="intereses" id="cotizacion"> Cotización
+                        </label>
+                        <label for="reclamos">
+                            <input type="checkbox" value="reclamos" name="intereses" id="reclamos"> Reclamos
+                        </label>
+                        <label for="comentarios">
+                            <input type="checkbox" value="comentarios" name="intereses" id="comentarios"> Comentarios
+                        </label>
+                        <label for="otros">
+                            <input type="checkbox" value="otros" name="intereses" id="otros"> Otros
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col2">
+                    <div class="asunto">
+                        <label for="asunto">Asunto</label>
+                        <textarea name="asunto" id="asunto" cols="30" rows="7"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar" class="button">
+                </div>
+
+                
+                <!-- http://flexboxfroggy.com/#es -->
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
